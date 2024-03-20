@@ -119,7 +119,7 @@ const index = () => {
             padding: 2,
             overflowY: "scroll",
             scrollbarWidth: "none",
-            background: "#F6F5F5",
+            background: "#A8CD9F",
           }}
         >
           <Typography
@@ -172,6 +172,7 @@ const index = () => {
             display: "flex",
             flexDirection: "column",
             padding: 4,
+            background: "#58A399",
           }}
         >
           <Stack direction="row" justifyContent="space-between">
