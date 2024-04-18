@@ -44,7 +44,7 @@ export const AuthDialog = ({ open, close, title }: IProps) => {
       } catch (error) {
         console.log(error);
       }
-      router.push("/dashboard");
+      router.push("/dashboard?applianceName=light");
     },
     [email, password, router]
   );
@@ -71,7 +71,7 @@ export const AuthDialog = ({ open, close, title }: IProps) => {
       } catch (error) {
         console.log(error);
       }
-      router.push("/dashboard");
+      router.push("/dashboard?applianceName=light");
     },
     [router, email, password, name]
   );

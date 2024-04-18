@@ -198,8 +198,7 @@ const index = () => {
               <CustomeCard
                 key={index}
                 data={x}
-                active={active}
-                setActive={setActive}
+                isActive={active}
               />
             ))}
           </Box>
@@ -211,7 +210,8 @@ const index = () => {
 
 export default index;
 
-const CustomeCard = ({ data, active, setActive }: any) => {
+const CustomeCard = ({ data, isActive}: any) => {
+  const [active , setActive] = useState<boolean>(isActive)
   return (
     <Card
       sx={{
